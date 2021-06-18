@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="baseball.css" />
+  </head>
+  <body>
+    <img src="image/bg.jpg" />
+    <div id="user">
+      <div id="user_name">
+        우리팀 이름 :
+        <input type="text" placeholder="최대15글자" maxlength="15" />
+      </div>
+      <div id="user_container_result">
+        제구방향 결정 :
+        <div id="user_result">
+          <input type="text" id="user_result_A" placeholder="숫"" maxlength="1"
+          />
+          <input
+            type="text"
+            id="user_result_B"
+            placeholder="자"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            id="user_result_C"
+            placeholder="부"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            id="user_result_D"
+            placeholder="탁"
+            maxlength="1"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="pc">
+      <div id="pc_name">
+        상대팀 이름 :<input
+          type="text"
+          placeholder="최대15글자"
+          maxlength="15"
+        />
+      </div>
+
+      <div id="pc_container">
+        휘둘렀습니다! :
+        <div id="pc_result"></div>
+      </div>
+    </div>
+
+    <div id="score">
+      <div id="score_board">점수판</div>
+      <div id="score_user">
+        우리팀 :
+        <div id="score_user_result"></div>
+      </div>
+      <div id="score_pc">
+        상대팀 :
+        <div id="score_pc_result"></div>
+      </div>
+      <div id="score_result">
+        <div id="score_result_a"></div>
+        <div id="score_result_b"></div>
+        <div id="score_result_c"></div>
+        <div id="score_result_d"></div>
+      </div>
+      <div id="score_calculate">결과 : <span id="score_math"></span></div>
+      <div id="score_sum">총합 : <span id="score_count"></span></div>
+    </div>
+    <input type="button" id="user_throw" value="던집니다!" onclick="" />
+    <script src="baseball.js"></script>
+  </body>
+</html>
